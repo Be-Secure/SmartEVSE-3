@@ -24,7 +24,7 @@ jobs:
 
     - name: Generate SBOM
       run: |
-        mkdir SBOMOUTPUThttps://github.com/SmartEVSE/SmartEVSE-3
+        mkdir SBOMOUTPUT
         $RUNNER_TEMP/sbom-tool generate -b SBOMOUTPUT/ -bc . -pn ${{ github.repository }} -pv v3.6.2 -ps wipro -nsb https://github.com/SmartEVSE/SmartEVSE-3
 
     - name: Upload SBOM artifact
